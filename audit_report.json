@@ -1,0 +1,82 @@
+{
+  "report_title": "Telecom Call Cost Audit Report",
+  "generated_by": "Jose M. Beato \u2014 telecom_cost_auditor.py",
+  "generated_with": "Built with Claude (Anthropic) \u2014 claude.ai",
+  "generated_at": "2026-03-09 13:33:04",
+  "audit_day": "Day 14 \u2014 AIOps \u2192 Toll Fraud Pivot",
+  "total_records": 19,
+  "total_flagged": 6,
+  "flagged_total_cost": 191.0,
+  "thresholds_applied": {
+    "cost_usd_threshold": 20.0,
+    "duration_mins_threshold": 10
+  },
+  "flagged_records": [
+    {
+      "branch_id": "NYC-001",
+      "caller_ext": "1042",
+      "destination": "+25261234567",
+      "country": "Somalia",
+      "duration_mins": 18.5,
+      "cost_usd": 37.0,
+      "timestamp": "2026-03-09 02:14:33",
+      "alert": true,
+      "alert_reason": "Cost $37.00 exceeds $20.00 threshold | Duration 18.5 min exceeds 10 min threshold"
+    },
+    {
+      "branch_id": "NYC-002",
+      "caller_ext": "2031",
+      "destination": "+37121234567",
+      "country": "Latvia",
+      "duration_mins": 14.0,
+      "cost_usd": 28.0,
+      "timestamp": "2026-03-09 03:45:52",
+      "alert": true,
+      "alert_reason": "Cost $28.00 exceeds $20.00 threshold | Duration 14.0 min exceeds 10 min threshold"
+    },
+    {
+      "branch_id": "BKN-001",
+      "caller_ext": "3012",
+      "destination": "+53123456789",
+      "country": "Cuba",
+      "duration_mins": 22.3,
+      "cost_usd": 44.6,
+      "timestamp": "2026-03-09 01:32:07",
+      "alert": true,
+      "alert_reason": "Cost $44.60 exceeds $20.00 threshold | Duration 22.3 min exceeds 10 min threshold"
+    },
+    {
+      "branch_id": "BKN-002",
+      "caller_ext": "4001",
+      "destination": "+26621234567",
+      "country": "Lesotho",
+      "duration_mins": 11.2,
+      "cost_usd": 22.4,
+      "timestamp": "2026-03-09 23:58:01",
+      "alert": true,
+      "alert_reason": "Cost $22.40 exceeds $20.00 threshold | Duration 11.2 min exceeds 10 min threshold"
+    },
+    {
+      "branch_id": "JRZ-001",
+      "caller_ext": "5023",
+      "destination": "+37061234567",
+      "country": "Lithuania",
+      "duration_mins": 16.7,
+      "cost_usd": 33.4,
+      "timestamp": "2026-03-09 04:10:15",
+      "alert": true,
+      "alert_reason": "Cost $33.40 exceeds $20.00 threshold | Duration 16.7 min exceeds 10 min threshold"
+    },
+    {
+      "branch_id": "PLN-002",
+      "caller_ext": "8044",
+      "destination": "+37121987654",
+      "country": "Latvia",
+      "duration_mins": 12.8,
+      "cost_usd": 25.6,
+      "timestamp": "2026-03-09 02:58:47",
+      "alert": true,
+      "alert_reason": "Cost $25.60 exceeds $20.00 threshold | Duration 12.8 min exceeds 10 min threshold"
+    }
+  ]
+}

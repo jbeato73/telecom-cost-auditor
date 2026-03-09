@@ -1,0 +1,20 @@
+branch_id,caller_ext,destination,country,duration_mins,cost_usd,timestamp,alert,alert_reason
+NYC-001,1042,+25261234567,Somalia,18.5,37.0,2026-03-09 02:14:33,True,Cost $37.00 exceeds $20.00 threshold | Duration 18.5 min exceeds 10 min threshold
+NYC-001,1018,+12125550199,United States,3.2,1.6,2026-03-09 09:22:11,False,None
+NYC-002,2031,+37121234567,Latvia,14.0,28.0,2026-03-09 03:45:52,True,Cost $28.00 exceeds $20.00 threshold | Duration 14.0 min exceeds 10 min threshold
+NYC-002,2055,+12015550143,United States,5.0,2.5,2026-03-09 11:08:44,False,None
+BKN-001,3012,+53123456789,Cuba,22.3,44.6,2026-03-09 01:32:07,True,Cost $44.60 exceeds $20.00 threshold | Duration 22.3 min exceeds 10 min threshold
+BKN-001,3044,+442071234567,United Kingdom,8.1,12.15,2026-03-09 14:55:30,False,None
+BKN-002,4001,+26621234567,Lesotho,11.2,22.4,2026-03-09 23:58:01,True,Cost $22.40 exceeds $20.00 threshold | Duration 11.2 min exceeds 10 min threshold
+BKN-002,4077,+12125550101,United States,2.0,1.0,2026-03-09 10:14:22,False,None
+JRZ-001,5023,+37061234567,Lithuania,16.7,33.4,2026-03-09 04:10:15,True,Cost $33.40 exceeds $20.00 threshold | Duration 16.7 min exceeds 10 min threshold
+JRZ-001,5041,+13015550188,United States,4.5,2.25,2026-03-09 13:30:00,False,None
+JRZ-002,6009,+12125550222,United States,1.5,0.75,2026-03-09 09:45:10,False,None
+JRZ-002,6031,,Unknown,7.0,14.0,2026-03-09 22:17:44,False,None
+PLN-001,7015,+25261987654,Somalia,9.5,19.0,2026-03-09 00:05:33,False,None
+PLN-001,7022,+12145550177,United States,6.3,3.15,2026-03-09 15:20:18,False,None
+PLN-002,8044,+37121987654,Latvia,12.8,25.6,2026-03-09 02:58:47,True,Cost $25.60 exceeds $20.00 threshold | Duration 12.8 min exceeds 10 min threshold
+PLN-002,8011,+12025550133,United States,3.8,1.9,2026-03-09 08:30:05,False,None
+CLB-001,9001,+53987654321,Cuba,5.5,11.0,2026-03-09 16:44:00,False,None
+CLB-002,9045,+26698765432,Lesotho,8.9,17.8,2026-03-09 23:10:22,False,None
+CLB-002,9012,+12125550300,United States,2.7,1.35,2026-03-09 12:00:00,False,None
