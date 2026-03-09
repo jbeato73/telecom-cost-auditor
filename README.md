@@ -96,13 +96,24 @@ Console output             ← Formatted summary with flagged call details
 
 ```
 ============================================================
+  telecom_cost_auditor.py — Starting...
+  Forked from: infra-cost-auditor
+  Day 14 | AIOps → Toll Fraud Detection Pivot
+============================================================
+[INFO] Loaded 20 records from 'sample_call_records.csv'
+[WARN] Skipping malformed record: could not convert string to float: 'invalid'
+       Row: CLB-001 | Ext: 9033 | bad_data | 2026-03-09 07:00:00
+[INFO] Cleaned 19 records. Skipped 1 malformed rows.
+[INFO] Output CSV written → 'audited_call_records.csv'
+[INFO] Audit report written  → 'audit_report.json'
+============================================================
   TELECOM CALL AUDIT — SUMMARY REPORT
   Jose M. Beato | Day 14 | March 9, 2026
 ============================================================
   Total records processed : 19
-  Records flagged         : 8
-  Clean records           : 11
-  Flagged cost total      : $210.00
+  Records flagged         : 6
+  Clean records           : 13
+  Flagged cost total      : $191.00
 ============================================================
 
   ⚠  FLAGGED CALLS:
@@ -112,6 +123,36 @@ Console output             ← Formatted summary with flagged call details
   Cost   : $37.00  |  Duration: 18.5 min
   Reason : Cost $37.00 exceeds $20.00 threshold | Duration 18.5 min exceeds 10 min threshold
   Time   : 2026-03-09 02:14:33
+  --------------------------------------------------------
+  Branch : NYC-002  |  Ext: 2031
+  Dest   : +37121234567 (Latvia)
+  Cost   : $28.00  |  Duration: 14.0 min
+  Reason : Cost $28.00 exceeds $20.00 threshold | Duration 14.0 min exceeds 10 min threshold
+  Time   : 2026-03-09 03:45:52
+  --------------------------------------------------------
+  Branch : BKN-001  |  Ext: 3012
+  Dest   : +53123456789 (Cuba)
+  Cost   : $44.60  |  Duration: 22.3 min
+  Reason : Cost $44.60 exceeds $20.00 threshold | Duration 22.3 min exceeds 10 min threshold
+  Time   : 2026-03-09 01:32:07
+  --------------------------------------------------------
+  Branch : BKN-002  |  Ext: 4001
+  Dest   : +26621234567 (Lesotho)
+  Cost   : $22.40  |  Duration: 11.2 min
+  Reason : Cost $22.40 exceeds $20.00 threshold | Duration 11.2 min exceeds 10 min threshold
+  Time   : 2026-03-09 23:58:01
+  --------------------------------------------------------
+  Branch : JRZ-001  |  Ext: 5023
+  Dest   : +37061234567 (Lithuania)
+  Cost   : $33.40  |  Duration: 16.7 min
+  Reason : Cost $33.40 exceeds $20.00 threshold | Duration 16.7 min exceeds 10 min threshold
+  Time   : 2026-03-09 04:10:15
+  --------------------------------------------------------
+  Branch : PLN-002  |  Ext: 8044
+  Dest   : +37121987654 (Latvia)
+  Cost   : $25.60  |  Duration: 12.8 min
+  Reason : Cost $25.60 exceeds $20.00 threshold | Duration 12.8 min exceeds 10 min threshold
+  Time   : 2026-03-09 02:58:47
   --------------------------------------------------------
 ```
 
@@ -151,17 +192,21 @@ ALERT_DURATION_THRESHOLD = 10      # Flag calls longer than 10 minutes
 
 ---
 
-## GitHub Commit
-
-After completing and testing the script:
+## GitHub Commits
 
 ```bash
 # ─────────────────────────────────────────────────────────────
-#  GITHUB COMMIT — Day 14
+#  GITHUB COMMITS — Day 14
 # ─────────────────────────────────────────────────────────────
 
-git add telecom_cost_auditor.py sample_call_records.csv README.md
+# Commit 1 — Main script and data files
+git add telecom_cost_auditor.py sample_call_records.csv README.md audit_report.json audited_call_records.csv
 git commit -m "Day 14: Telecom Cost Auditor — csv ingestion, data cleaning, cost/duration alert thresholds, JSON report"
+git push origin main
+
+# Commit 2 — Housekeeping
+git add .gitignore
+git commit -m "chore: update .gitignore — exclude venv, pyproject, pycache"
 git push origin main
 ```
 
